@@ -1,4 +1,4 @@
-package com.demoswift;
+package com.swiftview;
 
 import android.app.Application;
 

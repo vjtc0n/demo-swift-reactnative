@@ -1,4 +1,4 @@
-package com.demoswift;
+package com.swiftview;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "DemoSwift";
+        return "SwiftView";
     }
 }

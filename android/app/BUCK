@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.demoswift",
+    package = "com.swiftview",
 )
 
 android_resource(
     name = "res",
-    package = "com.demoswift",
+    package = "com.swiftview",
     res = "src/main/res",
 )
 

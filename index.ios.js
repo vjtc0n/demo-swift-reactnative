@@ -4,31 +4,30 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component,  } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  requireNativeComponent
+  requireNativeComponent,
+  View
 } from 'react-native';
-var CustomRNView = requireNativeComponent('DemoViewBridge',null)
 
-export default class DemoSwift extends Component {
+const DemoViewNative = requireNativeComponent('DemoView', DemoView)
+
+class DemoView extends Component {
+  render() {
+    return (
+      <DemoViewNative style={{ width: 200, height: 100 }} />
+    )
+  }
+}
+
+export default class SwiftView extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <CustomRNView style={{height: 100, width: 100}} text="Apple"/>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <DemoView />
       </View>
     );
   }
@@ -53,4 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('DemoSwift', () => DemoSwift);
+AppRegistry.registerComponent('SwiftView', () => SwiftView);

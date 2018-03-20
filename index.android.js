@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class DemoSwift extends Component {
+export default class SwiftView extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('DemoSwift', () => DemoSwift);
+AppRegistry.registerComponent('SwiftView', () => SwiftView);

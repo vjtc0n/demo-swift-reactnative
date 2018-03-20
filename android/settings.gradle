@@ -1,3 +1,3 @@
-rootProject.name = 'DemoSwift'
+rootProject.name = 'SwiftView'
 
 include ':app'
